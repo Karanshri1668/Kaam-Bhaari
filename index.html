@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaam Bhaari Fan Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap">
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+    }
+    .custom-cursor {
+      cursor: url('https://i.imgur.com/8cJHCUk.png'), auto;
+    }
+    .neon-text {
+      text-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 20px #ff007f;
+    }
+    .glow-btn {
+      box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+    }
+    .bg-rapper {
+      background: radial-gradient(#1a1a1a, #000000);
+    }
+  </style>
+</head>
+<body class="bg-rapper text-white custom-cursor">
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center relative" style="background-image: url('https://starsunfolded.com/wp-content/uploads/2024/04/Kaam-Bhaari.jpg');">
+    <h1 class="text-6xl font-bold neon-text drop-shadow-md">Kaam Bhaari</h1>
+    <p class="mt-4 text-2xl neon-text">Voice of the Streets</p>
+    <audio id="bg-music" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" autoplay loop></audio>
+    <button onclick="toggleMusic()" class="absolute top-5 right-5 bg-pink-600 px-4 py-2 rounded glow-btn">🎵 Toggle Music</button>
+  </section>
+
+  <!-- About Section -->
+  <section class="p-10">
+    <h2 class="text-5xl font-bold mb-4 neon-text">About</h2>
+    <p class="text-lg leading-relaxed">Kunal Pandagale, better known as Kaam Bhaari, is a Mumbai-based rapper, lyricist, and music producer. Rising from the streets of Kandivali, he broke out with his appearance in the Bollywood movie "Gully Boy" and later signed to Ranveer Singh's label IncInk Records. Known for his aggressive flow and raw lyrics, Kaam Bhaari represents the voice of the youth and the streets.</p>
+  </section>
+
+  <!-- Top Tracks -->
+  <section class="p-10">
+    <h2 class="text-5xl font-bold mb-6 neon-text">Top Tracks</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+        <iframe class="w-full h-60" src="https://www.youtube.com/embed/6xJypoyQFnQ?si=npJS2bVa8g3SSsn1&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="w-full h-60" src="https://www.youtube.com/embed/_hQ-l6qQEU0?si=15UWqIQtR1LLsU5g&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Quotes / Lyrics -->
+  <section class="p-10">
+    <h2 class="text-5xl font-bold mb-4 neon-text">Iconic Lines</h2>
+    <ul class="list-disc pl-5 space-y-2 text-lg">
+      <li>"Kaam Bhaari naam yaad rakhna!"</li>
+      <li>"Main likhta nahi hoon main jwala hoon."</li>
+      <li>"Apna time aayega... aur main laaya hoon kaam se."</li>
+    </ul>
+  </section>
+
+  <!-- Gallery -->
+  <section class="p-10">
+    <h2 class="text-5xl font-bold mb-6 neon-text">Gallery</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <img src="https://images.genius.com/a2b25f7c9209ae0e79eb1fc030451f44.1000x1000x1.jpg" alt="Kaam Bhaari" class="rounded-lg shadow-xl hover:scale-105 transition-transform duration-300 w-full h-50">
+      <img src="https://i.discogs.com/nkJ_NyCa76bhRNnKUpfnr8o4wdW9V2xIsqWzd0voKSY/rs:fit/g:sm/q:90/h:224/w:224/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTg5MzI5/NzItMTYxNTQwNTYy/OS02NDk5LmpwZWc.jpeg" alt="Live Performance" class="rounded-lg shadow-xl hover:scale-105 transition-transform duration-300 w-full h-50">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK5A3C2CdWp0ucYLUh_Ol19ptufgthyipozCYVBVkW23tu57ZbcNxPc86tYA4PnOaAOlQ&usqp=CAU" alt="Studio Vibes" class="rounded-lg shadow-xl hover:scale-105 transition-transform duration-300 w-full h-50">
+      <img src="https://a10.gaanacdn.com/gn_img/artists/VdNW0JMKo5/dNW06PONKo/size_m_1628576058.jpg" alt="Kaam Bhaari in action" class="rounded-lg shadow-xl hover:scale-105 transition-transform duration-300 w-full h-50">
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="p-10">
+    <h2 class="text-5xl font-bold mb-4 neon-text">Latest News</h2>
+    <ul class="space-y-4">
+      <li>
+        <h3 class="text-2xl font-semibold">New Track "RAKA" Out Now</h3>
+        <p>Kaam Bhaari drops a fiery new single showcasing his lyrical genius and storytelling.</p>
+      </li>
+      <li>
+        <h3 class="text-2xl font-semibold">Collab with DIVINE Announced</h3>
+        <p>A power-packed track featuring Mumbai’s finest – Kaam Bhaari and DIVINE coming soon!</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Discography -->
+  <section class="p-10">
+    <h2 class="text-5xl font-bold mb-6 neon-text">Discography</h2>
+    <ul class="space-y-2 text-lg">
+      <li><strong>Zeher</strong> – Single (2019)</li>
+      <li><strong>Kaam Bhaari</strong> – Gully Boy OST (2019)</li>
+      <li><strong>Mohabbat</strong> – IncInk (2020)</li>
+      <li><strong>RAKA</strong> – Independent (2024)</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="p-10">
+    <h2 class="text-5xl font-bold mb-6 neon-text">Contact</h2>
+    <p class="text-lg mb-4">Got something to share or ask? Reach out!</p>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-gray-800 text-white focus:outline-none">
+      <input type="email" placeholder="Your Email" class="w-full p-3 rounded bg-gray-800 text-white focus:outline-none">
+      <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded bg-gray-800 text-white focus:outline-none"></textarea>
+      <button type="submit" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded glow-btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-6 text-center text-gray-400">
+    <p>Fan page created by Sachin | Not official | © 2025</p>
+  </footer>
+
+  <!-- GSAP + Music Toggle -->
+  <script>
+    gsap.from("h1", { duration: 1.5, y: -50, opacity: 0, ease: "bounce" });
+    gsap.from("section", { duration: 1, y: 30, opacity: 0, stagger: 0.3 });
+
+    function toggleMusic() {
+      const music = document.getElementById('bg-music');
+      if (music.paused) music.play();
+      else music.pause();
+    }
+  </script>
+
+</body>
+</html>
